@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilo.css">
+    <script src="./script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="home" class="header">
+        <svg onclick="sumirConteudoLista()" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="x" viewBox="0 0 16 16">
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+        <div class="navigation" id="navigation" >
+            <a id="link1" href="#home">Home</a><a id="link2" href="#sobreMim">Objetivo</a><a id="link3" href="#oqueEuFaco">Sobre</a><a id="link4" href="#alvo">Publico</a><a id="link5" href="#formulario">Contate-me</a>
+        </div>
+        <a class="icones" href="https://punksubsp.itch.io/spacewars">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30" fill="currentColor" id="lista" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" id="windows" viewBox="0 0 16 16">
+                <path d="M6.555 1.375 0 2.237v5.45h6.555V1.375zM0 13.795l6.555.933V8.313H0v5.482zm7.278-5.4.026 6.378L16 16V8.395H7.278zM16 0 7.33 1.244v6.414H16V0z"/>
+            </svg> -->
+            <div class="box" >
+                <button class="button">Jogar</button>
+                <div class="space">
+                  <span style="--i: 31" class="star"></span>
+                  <span style="--i: 12" class="star"></span>
+                  <span style="--i: 57" class="star"></span>
+                  <span style="--i: 93" class="star"></span>
+                  <span style="--i: 23" class="star"></span>
+                  <span style="--i: 70" class="star"></span>
+                  <span style="--i: 6" class="star"></span>
+                </div>
+            </div>
+            <!-- <img id="windows" src="https://img.itch.zone/aW1nLzE0MTQxNDM1LmpwZw==/original/CeGmZE.jpg" alt="logo"> -->
+        </a>
+    </div>
+    <section class="conteudo">
+        <video class="video" autoplay loop muted plays-inline>
+            <source src="./assents/lava.mp4" type="video/mp4">
+        </video>
+
+        <div class="divImagem">
+            <img class="img" src="https://img.itch.zone/aW1nLzE0MTQxNDM1LmpwZw==/original/CeGmZE.jpg" alt="myself">
+        </div>
+        <div class="apresentacaoBasica param">
+                <span class="bemVindo param"> Prepare-se </span>
+                <h2 class="nome param">para uma aventura inesquecível</h2>
+                <h4 class="dev param">Com SpaceWars!</h4>
+            <div class="iconesPequenos">
+                <!-- <a class="param" href="mailto:guilhermesantospineda@gmai.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                    </svg>
+                    guilhermesantospineda@uni9.edu.br
+                </a> -->
+                <a class="param"  href="#">
+                    <svg class="bi whatsapp" xmlns="http://www.w3.org/2000/svg" height="16" width="20" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#ffffff" d="M192 64C86 64 0 150 0 256S86 448 192 448H448c106 0 192-86 192-192s-86-192-192-192H192zM496 168a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM392 304a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM168 200c0-13.3 10.7-24 24-24s24 10.7 24 24v32h32c13.3 0 24 10.7 24 24s-10.7 24-24 24H216v32c0 13.3-10.7 24-24 24s-24-10.7-24-24V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h32V200z"/></svg> 
+                        mergulhe em um universo de desafios épicos e emoções intensas.    
+                </a>
+                <!-- <a target="_blank" class="param" href="https://wa.me/5511971225580?text=Gostaria%20de%20entrar%20em%20contato%20com%20você">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi whatsapp" viewBox="0 0 16 16">
+                        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                    </svg>
+                    +55 11 97122-5580
+                </a> -->
+                <!-- <a class="param" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi gps" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                </svg>
+                Osasco, São Paulo, Brazil
+                </a> -->
+                <div class="iconesPequenos2">
+                    <a target="_blank" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="icn github param" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="icn facebook param" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="icn twitter param" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                        </svg>
+                    </a>
+                    <a target="_blank" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="icn linkedin param" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                        </svg>
+                    </a> 
+                </div>
+            </div> 
+        </div>
+    </section>
+
+
+    <section id="sobreMim" class="sobreMim">
+        <div class="divImgSobreMim" data-anima="esquerda">
+            <img class="enfeite" src="https://programadorbr.com/static/media/plus.3591bd1434c5d40e9cfa37bf63871c10.svg" alt="" style="transform: rotate(30deg); width: 90px; height: 90px; padding: 10px;">
+            <img class="imgSobreMim" src="https://img.itch.zone/aW1nLzE0MTQxNDM1LmpwZw==/original/CeGmZE.jpg" alt="">
+        </div>
+        <div class="secaoSobreMim" data-anima="direita">
+            <div class="h1SobreMim">
+                <h2>&lt; Um pouco <br><br> sobre <span class="ssbre">O Jogo</span> /&gt </h2>
+            </div>
+            <p> "SpaceWars: A Batalha Intergaláctica Começa!" é um jogo envolvente e desafiador ambientado no espaço sideral. Neste jogo top down repleto de ação, os jogadores assumem o controle de uma nave espacial em uma missão para explorar o desconhecido.
+                Com quatro vidas à disposição, os jogadores enfrentam uma série de desafios enquanto manobram habilmente a nave utilizando as setas do teclado, desviando-se de asteroides e evitando os ataques das naves inimigas. A barra de espaço atua como a arma principal, permitindo que os jogadores atirem com precisão contra as naves alienígenas que cruzam seu caminho.
+            </p>
+            <ul>
+                <li><span>Alien</span></li>
+                <li><span>Extraterrestrial</span></li>
+                <li><span>Shoot</span></li>
+                <li><span>Space</span></li>
+                <li><span>Spaceship</span></li>
+                <li><span>Spacewars</span></li>
+                <li><span>React Native</span></li>
+                <li><span>War</span></li>
+            </ul>
+            <a class="classeLinkDoDownload" href="https://punksubsp.itch.io/spacewars" download>
+                <div class="download">Acessar o jogo!
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="iconeDownload" viewBox="0 0 16 16">
+                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </section>
+
+
+    <section id="oqueEuFaco" class="conteudoMeuServico">
+        <div class="geralGrid" data-anima="centro">
+            <div class="tituloMeuServico">
+                <h1>Oque o jogo Possui?</h1>
+            </div>
+            <div class="meuServicoGridGeral">
+                <div class="grid g1">
+                    <img src="https://cdn-icons-png.flaticon.com/512/7466/7466925.png" alt="icon">
+                    <div class="textoDaGrid">
+                        <p class="htmlGrid">
+                            Possui menu interativo, onde é possivel iniciar o game ou sair do jogo.
+                        </p>
+                     </div>
+                </div>
+                <div class="grid g2">
+                    <img src="https://godotengine.org/assets/press/icon_color.png" alt="icon2">
+                    <div class="textoDaGrid">
+                        <p class="htmlGrid">
+                            Possui um poderoso motor grafico, senda utilizada a Godot para a confecção do jogo.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid g3">
+                    <img src="https://programadorbr.com/static/media/Superhero.5477b9d893eecfb958551967cb381c5d.svg" alt="icon3">
+                    <div class="textoDaGrid">
+                        <p class="htmlGrid">
+                            Possui sistema de pontuação onde é possivel aculmular recordes com varios jogadores!
+                        </p>
+                     </div>
+                </div>
+                <div class="grid g1">
+                    <img src="https://cdn-icons-png.flaticon.com/512/7010/7010922.png" alt="icon">
+                    <div class="textoDaGrid">
+                        <p class="htmlGrid">
+                            Possui um sistema responsavel pela contagem de vidas para tonar o game mais realista.
+                        </p>
+                     </div>
+                </div>
+                <div class="grid g2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1408/1408990.png" alt="icon2">
+                    <div class="textoDaGrid">
+                        <p class="htmlGrid">
+                            Possui graficos intensos, inspirados nos jogos antigos 8 Bits.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid g3">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1408/1408973.png" alt="icon3">
+                    <div class="textoDaGrid">
+                        <p class="htmlGrid">
+                            Possui um otimo sistema de mobilidade e de ataque, garantindo horas de diversão!
+                        </p>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+       
+    <section style="background-image: none; background-color: #181818;" class="portifolio featured-img-one image-bg">
+        <div class="slider" style="height: auto !important; transform: scale(0.7);">
+            <div class="slides" style="height: auto ;">
+                <!--Radio Buttons-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!--Fim Radio Buttons-->
+
+                <!--Slide images-->
+                <div class="slide first">
+                    <img src="./Captura de tela 2023-11-29 212622.png" alt="image 1">
+                </div>
+                <div class="slide">
+                    <img src="./2.png" alt="image 2">
+                </div>
+                <div class="slide">
+                    <img src="./3.png" alt="image 3">
+                </div>
+                <div class="slide">
+                    <img src="./4.png" alt="image 4">
+                </div>
+                <!--Fim Slide Images-->
+
+                <!--Navigation-auto-->
+                <div class="navigation-auto" style="margin-top: 1407px !important;">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+            </div>
+
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- <section id="projetosFeitos" class="projetosFeitos">
+        <h1 class="projetosFeitosTitle"> Projetos Feitos </h1>
+        <div class="uniGerall">
+            <div class="todosProjetos">
+                <div class="pro projeto1">
+                    <div class="clima projetos"></div>
+                    <a class="" target="_blank" href="https://github.com/Guilherme-dos-Santos-Pineda/Clima-J-">
+                        <h2>Aplicativo de Previsao do Tempo</h2>
+                    </a>
+                    <ul>
+                        <li><span>HTML</span></li>
+                        <li><span>CSS</span></li>
+                        <li><span>JavaScript</span></li>
+                    </ul>
+                    <p>Aplicativo WEB de previsão do tempo. Além de capturar os dados climaticos ele tambem puxa um banco e imagens e tenta passar ao fundo alguma imagem parecida com a cidade que digitou</p>
+                    <a class="tituloLink" target="_blank" href="https://github.com/Guilherme-dos-Santos-Pineda/Clima-J-">Ver Repositório</a>
+                </div>
+                <div class="pro projeto2" >
+                    <div class="Device projetos"></div>
+                    <a href="https://guilherme-dos-santos-pineda.github.io/Clima-J-/">
+                        <h2>Gerador de Conselhos</h2>
+                    </a>
+                    <ul>
+                        <li><span>HTML</span></li>
+                        <li><span>CSS</span></li>
+                        <li><span>JavaScript</span></li>
+                        <li><span>API</span></li>
+                        <li><span>NodeJS</span></li>
+                    </ul>
+                    <p>Um gerador de conselhos aleatorios que conseme uma API externa</p>
+                    <a class="tituloLink" href="https://github.com/Guilherme-dos-Santos-Pineda/Clima-J-">Ver Repositório</a>
+                </div>
+                <div class="pro projeto3">
+                    <div class="todo projetos"></div>
+                    <a href="">
+                        <h2>To do List (CRUD)</h2>
+                    </a>
+                    <ul>
+                        <li><span>HTML</span></li>
+                        <li><span>CSS</span></li>
+                        <li><span>javascript</span></li>
+                    </ul>
+                    <p>É um To do List, abreviado para "ToDo", é um sistema que permite, criar, apagar, editar e concluir tarefas</p>
+                    <a class="tituloLink" href="https://github.com/Guilherme-dos-Santos-Pineda">Ver Repositório</a>
+                </div>
+                <div class="pro projeto4">
+                    <div class="YT projetos"></div>
+                    <a href="">
+                        <h2>Clone do YouTube</h2>
+                    </a>
+                    <ul>
+                        <li><span>HTML</span></li>
+                        <li><span>CSS</span></li>
+                        <li><span>JavaScript</span></li>
+                        <li><span>ReactJS</span></li>
+                    </ul>
+                    <p>Um clone do YouTube em versão minificada, feito em React</p>
+                    <a class="tituloLink" href="https://github.com/Guilherme-dos-Santos-Pineda">Ver Repositório</a>
+                </div>
+                <div class="pro projeto5">
+                    <div class="Game projetos"></div>
+                    <a href="">
+                        <h2>Pedra, Papel, Tesoura</h2>
+                    </a>
+                    <ul>
+                        <li><span>HTML</span></li>
+                        <li><span>CSS</span></li>
+                    </ul>
+                    <p>Um game clasico de JoKenPo</p>
+                    <a class="tituloLink" href="https://github.com/Guilherme-dos-Santos-Pineda">Ver Repositório</a>
+                </div>
+                <div class="pro projeto6">
+                    <div class="Formulario projetos"></div>
+                    <a href="">
+                        <h2>Formulario Generico</h2>
+                    </a>
+                    <ul>
+                        <li><span>HTML</span></li>
+                        <li><span>CSS</span></li>
+                        <li><span>JavaScript</span></li>
+                    </ul>
+                    <p>Um Formulario feito utilizando tecnicas de UX.</p>
+                    <a class="tituloLink" href="https://github.com/Guilherme-dos-Santos-Pineda">Ver Repositório</a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="alvo" class="mySkills">
+        <div class="geral">
+            <div class="tituloHT">
+                <h1>Publico Alvo - Idade</h1>
+            </div>
+            <div class="texto simples-1" style="color: #fff;">
+                <p>03 - 10 </p>
+                <div class="barra barra-vazia">
+                    <div class="barra um barra-cheia"></div>
+                </div>
+            </div>
+            <div class="texto simples-2" style="color: #fff;">
+                <p>11 - 13 </p>
+                <div class="barra barra-vazia">
+                    <div class="barra dois barra-cheia"></div>
+                </div>
+            </div>
+            <div class="texto simples-3" style="color: #fff;">
+                <p> 13 - 18 </p>
+                <div class="barra barra-vazia">
+                    <div class="barra tres barra-cheia"></div>
+                </div>
+            </div>
+            <div class="texto simples-4" style="color: #fff;">
+                <p> 19 - 25 </p>
+                <div class="barra barra-vazia">
+                    <div class="barra quatro barra-cheia"></div>
+                </div>
+            </div>
+            <div class="texto simples-5" style="color: #fff;">
+                <p>25 - 45 </p>
+                <div class="barra barra-vazia">
+                    <div class="barra cinco barra-cheia"></div>
+                </div>
+            </div>
+            <div class="texto simples-6" style="color: #fff;">
+                <p>46 - 60 </p>
+                <div class="barra barra-vazia">
+                    <div class="barra seis barra-cheia"></div>
+                </div>
+            </div>
+            <div  class="texto simples-7" style="color: #fff;">
+                <p>60 - 99 </p>
+                <div class="barra barra-vazia">
+                    <div class="barra sete barra-cheia"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="formacao">
+        <div class="educacaoEExperiencia">
+            <div class="educacao">
+                <h2 class="ano-ano" style="font-size: 35px;">Integrantes</h2>
+                <div class="for uni9">
+                    <h3>Guilherme dos Santos Pineda </h3>
+                    <p class="cor" >RA: 921106251</p>
+                    <p class="ano" >Criação do site</p>
+                </div>
+                <div class="for programadorbr">
+                    <h3>Leonardo Cazumba Alves </h3>
+                    <p class="cor" >RA: 923206157</p>
+                    <p class="ano" >Criação do Jogo</p>
+                </div>
+                <div class="for dankicode">
+                    <h3>Nelson de Sousa Soares </h3>
+                    <p class="cor" >RA: 420104490</p>
+                    <p class="ano" >Criação do site</p>
+                </div>
+
+            </div>
+            <div class="Experiencias">
+                <!-- <h2 class="ano-ano">Integrantes</h2> -->
+                <div class="for dankicode">
+                    <h3>Wendell Rodrigues da Silva </h3>
+                    <p class="cor" >RA: 920121266</p>
+                    <p class="ano" >Criação do site</p>
+                </div>
+                <div class="for dankicode">
+                    <h3>Luis Felipe Macario de Abreu </h3>
+                    <p class="cor" >RA: 921104518</p>
+                    <p class="ano" >Apresentação do Projeto e documentação</p>
+                </div>
+                <div class="for dankicode">
+                    <h3>Gustavo Oliveira da Silva </h3>
+                    <p class="cor" >RA: 921110417</p>
+                    <p class="ano" >Documentação</p>
+                </div>
+        </div>
+    </section>
+
+    <div class="contatic"><h1>Contato</h1></div>
+    <section class="contate-me">
+        <!-- <div class="geralGeral">
+            <div class="if redes-sociais">
+                <div class="icone--">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-person-workspace" viewBox="0 0 16 16">
+                        <path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H4Zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+                        <path d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.373 5.373 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2H2Z"/>
+                    </svg>
+                </div>
+             <div class="junta2">
+                <div class="icones-gerais">
+                    <div class="ti ti-ti">
+                        <h1>Redes Sociais</h1>
+                    </div>
+                    <div class="varios">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi tri bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi tri bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi tri bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi tri bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="if imagem-email">
+                <div class="icone--">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                    </svg>
+                </div>
+                <div class="junta2">
+                    <div class="icones-gerais">
+                        <div class="ti ti-em">
+                            <h1>E-mail</h1>
+                        </div>
+                        <div class="varios">
+                            <div class="simples-email">
+                                <a href="">guilhermesantospineda@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="if imagem-telefone">
+                <div class="icone--">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                    </svg>
+                </div>
+                <div class="junta2">
+                    <div class="icones-gerais">
+                        <div class="ti ti-tel">
+                            <h1>Telefone</h1>
+                        </div>
+                        <div class="varios">
+                            <div>
+                                <a href="">+ 55 11 97122-5580</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <form id="formulario" method="POST" action="https://formspree.io/f/meqwqegd" class="formulario">
+            <div class="form-contat">
+                <div class="qua div-nome">
+                    <input name="name" class="cont contato-nome" id="nome" type="text" placeholder="Nome" required>
+                </div>
+                <div class="qua div-telefone">
+                    <input name="Telefone" class="cont contato-telefone" id="telefone" type="tel" placeholder="Telefone (Opcional)">
+                </div>
+                <div class="qua div-email">
+                    <input name="email" class="cont contato-email" id="email" type="email" placeholder="Email" required>
+                </div>
+                <div class="qua div-textarea">
+                    <input name="mesage" rows="5" class="cont contato-texto" id="mensagem" type="text" placeholder="Deixe sua mensagem" required>
+                </div>
+                <div class="divBotaoEnviar">
+                    <button type="submit" class="botao" id="botao">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</body>
+<script>
+
+// var navigation = document.getElementById("navigation");
+// var esconder = false;
+// function mudarIcone(){
+//     let windows = document.getElementById("windows");
+//     let lista = document.getElementById("lista");
+
+//     windows.style = "display:none";
+//     lista.style = "display:flex";
+// colocar esse evento no icone do windows para quando mudar a tela
+
+// function arrumarFechamento(){
+
+//     esconder = !esconder;
+//     if(esconder)
+//     {
+//         navigation.style.marginLeft = '-10px';
+//         navigation.style.animationName = 'showSidebar';
+//     }
+//     else{
+//         navigation.style.marginLeft = '-100vw';
+//         navigation.style.animation = '';
+//     }
+// }
+
+// function moverIconeDaLista(){
+//     let iconelista = document.getElementById("lista");
+//     iconelista.style = "display: none";
+
+//     let navigation = document.getElementById("navigation");
+//     navigation.style = "display: flex; padding: 15px";
+
+//         let conteudoLista1 = document.getElementById("link1");
+//         conteudoLista1.style = "display:none";
+
+//         let conteudoLista2 = document.getElementById("link2");
+//         conteudoLista2.style = "display:none";
+
+//         let conteudoLista3 = document.getElementById("link3");
+//         conteudoLista3.style = "display:none";
+
+//         let conteudoLista4 = document.getElementById("link4");
+//         conteudoLista4.style = "display:none";
+
+//         let conteudoLista5 = document.getElementById("link5");
+//         conteudoLista5.style = "display:none";
+
+//     let espaco = document.body.innerHTML = document.body.innerHTML+'<div class="teste" id="teste"><a id="1" href="#">Home</a><a id="2" href="#">Sobre Mim</a><a id="3" href="#">Portifolio</a><a id="4" href="#">Projetos</a><a id="5" href="#">Contate-me</a></div>';
+
+//     let x = document.getElementsByClassName("x");
+//     x[0].style = "display: flex";
+
+//     window.addEventListener("resize", function(event){
+//         if(window.innerWidth < 415 && moverIconeDaLista)
+//         {
+//             console.log("tchau")
+//         let iconelista = document.getElementById("lista");
+//         iconelista.style = "display: flex";
+
+//         let navigation = document.getElementById("navigation");
+//         navigation.style = "display: flex";
+
+//         let conteudoLista1 = document.getElementById("link1");
+//         conteudoLista1.style = "display:none";
+
+//         let conteudoLista2 = document.getElementById("link2");
+//         conteudoLista2.style = "display:none";
+
+//         let conteudoLista3 = document.getElementById("link3");
+//         conteudoLista3.style = "display:none";
+
+//         let conteudoLista4 = document.getElementById("link4");
+//         conteudoLista4.style = "display:none";
+
+//         let conteudoLista5 = document.getElementById("link5");
+//         conteudoLista5.style = "display:none";
+//         }
+//     })
+    
+
+// };
+
+// function sumirConteudoLista(){
+
+//     let iconelista = document.getElementById("lista");
+//     iconelista.style = "display: flex";
+
+//     let x = document.getElementsByClassName("x");
+//     x[0].style = "display: none"
+
+//        let p = document.getElementById("teste");
+//        p.remove(teste);
+
+    
+//     window.addEventListener("resize", function(event){
+//         if(window.innerWidth > 415 && moverIconeDaLista)
+//         {
+//             console.log("oi")
+//             let iconelista = document.getElementById("lista");
+//     iconelista.style = "display: none";
+
+//             let navigation = document.getElementById("navigation");
+//     navigation.style = "display: flex";
+
+//         let conteudoLista1 = document.getElementById("link1");
+//         conteudoLista1.style = "display:flex";
+
+//         let conteudoLista2 = document.getElementById("link2");
+//         conteudoLista2.style = "display:flex";
+
+//         let conteudoLista3 = document.getElementById("link3");
+//         conteudoLista3.style = "display:flex";
+
+//         let conteudoLista4 = document.getElementById("link4");
+//         conteudoLista4.style = "display:flex";
+
+//         let conteudoLista5 = document.getElementById("link5");
+//         conteudoLista5.style = "display:flex";
+//         }
+//     })
+
+
+// };
+// const box = document.querySelector(".box");
+// box.addEventListener("click", (i)=>{
+//     console.log(i)
+//     i.target.src = "https://punksubsp.itch.io/spacewars"
+// })
+
+// começo do animador da pagina
+
+const elementos = document.querySelectorAll('[data-anima]');
+const animacaoClasse = 'animacao';
+
+function animaScroll(){
+    const topoPaginaNaJanela = window.pageYOffset+((window.innerHeight*3)/4);
+    elementos.forEach(function(elemento){
+        if(topoPaginaNaJanela > elemento.offsetTop){
+            elemento.classList.add(animacaoClasse);
+        }
+
+    });
+}
+
+if(elementos.length){
+    window.addEventListener("scroll",function(){
+        animaScroll();
+    })
+}
+
+//Fim do animador da pagina
+
+// Começo do Contator para passar o slide
+let count = 1;
+document.getElementById("radio1").checked = true;
+
+setInterval(function(){
+    nextImage();
+}, 5000)
+
+function nextImage(){
+    count++;
+    if(count>4){
+        count = 1;
+    }
+    document.getElementById("radio"+count).checked = true;
+}
+
+</script>
+</html>
